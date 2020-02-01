@@ -2,19 +2,16 @@ import requests
 import json
 from datetime import datetime
 import pprint
+import threading
+import time
 
 list_pub_repo = 'https://api.github.com/repositories'
 
-secret_key = "b6be10c95e5f301f97f2f60a0f0b1028bed30d8b"
+secret_key = "4e57f5f97acc7781c93acfc19b7af5bbd87a9162"
 headers = {'Authorization': 'token %s' % secret_key}
 
 
-base_response = requests.get(list_pub_repo, headers=headers)
-while "next" in base_response.links.keys():
-	next_url = base_response.links.get("next").get("url")
-	
-	print(next_url)
-
+def get_tags(base_response):
 	for repo in base_response.json():
 		repo_url = repo.get("url")
 
@@ -24,7 +21,7 @@ while "next" in base_response.links.keys():
 			repo_updated = repo_data.get("updated_at")
 			
 			if repo_updated is None:
-				print("repo_updfated not found")
+				print("repo_updated not found")
 				continue
 			
 			datetime_object_repo_updated = datetime.strptime(repo_updated, "%Y-%m-%dT%H:%M:%SZ")
@@ -46,5 +43,26 @@ while "next" in base_response.links.keys():
 		else:
 			print("repo url not found") 
 
+threads = []
+base_response = requests.get(list_pub_repo, headers=headers)
+if base_response.status_code == 403:
+	time.sleep(60*60)
+
+while "next" in base_response.links.keys():
+	
+	next_url = base_response.links.get("next").get("url")
+
+	#threading
+
+	x = threading.Thread(target = get_tags, args = (base_response,))
+	threads.append(x)
+
+	x.start()
+
 	base_url = next_url
 	base_response = requests.get(base_url, headers=headers)
+
+for thread in threads:
+	
+	thread.join()
+

@@ -1,0 +1,120 @@
+    1  exit
+    2  exit
+    3  git
+    4  sudo apt install git
+    5  sudo apt-get update
+    6  sudo apt install git
+    7  git
+    8  cd Desktop/
+    9  ls
+   10  pip
+   11  python
+   12  exit
+   13  cd
+   14  mkdir
+   15  python
+   16  sudo apt install python3
+   17  pip
+   18  sudo apt install python-pip
+   19  apt-get update
+   20  python virtualenv venv
+   21  python3
+   22  python3 virtualenv venv
+   23  virtualenv env
+   24  sudo apt install virtualenv
+   25  python3 virtualenv venv
+   26  python virtualenv venv
+   27  git init
+   28  git add
+   29  git add .
+   30  git commit -m "Add all my files"
+   31  install git
+   32  sudo apt install git
+   33  git init
+   34  git add .
+   35  git commit -m "Add all my files"
+   36  git config --global user.email "utkarsh.rai@students.mq.edu.au"
+   37  git config --global user.name "Utkarsh Rai"
+   38  git config --global user.email utkarsh.rai@students.mq.edu.au
+   39  git config --global user.name utkarshrai9
+   40  virtualenv venv
+   41  virtualenv
+   42  python virtualenv venv
+   43  python3 virtualenv venv
+   44  virtualenv
+   45  cd firstProject
+   46  mkdir
+   47  mkdir firstProject
+   48  virtualenv -p python3 venv
+   49  cd firstProject
+   50  touch first.py
+   51  vim first.py
+   52  vi first.py
+   53  cd
+   54  wget -q0 - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+   55  sudo apt-get install apt-transport-https
+   56  echo "deb https://download.sublimetext.com/apt/dev/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+   57  sudo apt-get update
+   58  sudo apt-get install sublime-text
+   59  vim first.py
+   60  sudo apt installvim
+   61  sudo apt install vim
+   62  sudo apt-get install gnome-shell
+   63  4123
+   64  sudo apt-get install gnome-shell
+   65  wget -q0 - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+   66  echo "deb https://download.sublimetext.com/apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+   67  sudo apt-get update
+   68  cd firstProject
+   69  cd
+   70  sudo apt-get 
+   71  sudo apt-get update
+   72  sudo apt-get upgrade
+   73  nano /etc/apt/sources.list.d/sublime-text.list 
+   74  sudo nano /etc/apt/sources.list.d/sublime-text.list 
+   75  sudo apt-get upgrade
+   76  sudo apt-get update
+   77  sudo apt-get upgrade
+   78  sudo apt-get install sublime-text
+   79  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+   80  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+   81  sudo apt-get update
+   82  sudo apt-get install sublime-text
+   83  pwd
+   84  cd Desktop/
+   85  ls
+   86  cd firstProject/
+   87  virtualenv venv
+   88  virtualenv -p python3 venv
+   89  ls
+   90  cd venv/
+   91  ls
+   92  source bin/activate
+   93  pip install django
+   94  pip freeze
+   95  touch get_repos.py
+   96  pwd
+   97  ls
+   98  python get_repos.py 
+   99  git
+  100  ls
+  101  deactivate
+  102  ls
+  103  cd ..
+  104  ls
+  105  cd venv/
+  106  git init
+  107  git add get_repos.py 
+  108  git commit -m "First commit"
+  109  git push -u origin master
+  110  git config
+  111  git --config
+  112  git config --global user.name
+  113  git config --global user.email
+  114  git remote add origin https://github.com/utkarshrai9/tweet_bot.git
+  115  git push -u origin master
+  116  sublime get_repos.py
+  117  git diff
+  118  history > initialisation.tex
+  119  history > initialisation.txt
+
